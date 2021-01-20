@@ -8,7 +8,7 @@ vRP = Proxy.getInterface("vRP")
 -- COMANDO 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('rrsystem',function(source,args,rawCommand)
-	local user_id = vRP.getUserId(source)
+    local user_id = vRP.getUserId(source)
     if vRP.hasPermission(user_id,"admin.permissao") then
         local nusers = vRP.getUsers()
         for k,v in pairs(nusers) do
@@ -18,7 +18,7 @@ RegisterCommand('rrsystem',function(source,args,rawCommand)
                 TriggerClientEvent("restarteventclient",nplayer)
             end
         end
-	end
+     end
 end)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- KICK ALL 
