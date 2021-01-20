@@ -4,7 +4,7 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- FUNÇÕES QUE APARECEM NA TELA
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-RegisterNetEvent("restarteventclient")  --RECEBE INFO DO SERVIDOR PARA INICIO DA CONTAGEM
+RegisterNetEvent("restarteventclient")   
 AddEventHandler("restarteventclient",function() 
     Wait(0)
     announcestring = "~p~60 SEGUNDOS"
