@@ -14,7 +14,7 @@ RegisterCommand('rrsystem',function(source,args,rawCommand)
         for k,v in pairs(nusers) do
             local nplayer = vRP.getUserSource(parseInt(k))
             if nplayer then
-                TriggerClientEvent("chatMessage",nplayer,"[SYSTEM]",{64,64,255}," - RESTART SYSTEM! DESLOGUE IMEDIATAMENTE!")
+                TriggerClientEvent("chatMessage",nplayer,"[SYSTEM]",{64,64,255}," - ALERTA DE RESTART! DESLOGUE IMEDIATAMENTE!")
                 TriggerClientEvent("restarteventclient",nplayer)
             end
         end
